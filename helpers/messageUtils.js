@@ -1,7 +1,7 @@
 export const helpTexts = {
   main: `
 Usage:
-  $ next-cli <command> [options]
+  $ nextcli <command> [options]
 
 Commands:
   generate, g    Generate Next.js components
@@ -11,13 +11,13 @@ Options:
   -h, --help       Display help for command
 
 Examples:
-  $ next-cli g page home
-  $ next-cli generate component button --typescript
-  $ next-cli g layout main --css --server`,
+  $ nextcli g page home
+  $ nextcli generate component button --typescript
+  $ nextcli g layout main --css --server`,
   generate: `
 Usage:
-  $ next-cli generate <type> <name> [options]
-  $ next-cli g <type> <name> [options]
+  $ nextcli generate <type> <name> [options]
+  $ nextcli g <type> <name> [options]
 
 Arguments:
   type    Component type (page, layout, template, component)
@@ -31,8 +31,8 @@ Options:
   -h, --help          Display help for command
 
 Examples:
-  $ next-cli g page home --ts --client
-  $ next-cli generate component button --css`,
+  $ nextcli g page home --ts --client
+  $ nextcli generate component button --css`,
 }
 
 export function showSuccessMessage(type, name, options) {

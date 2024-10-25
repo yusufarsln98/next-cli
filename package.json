@@ -1,13 +1,14 @@
 {
-  "name": "next-cli-tool",
+  "name": "@yusufarsln98/nextcli",
   "version": "1.0.0",
   "description": "A CLI tool for generating Next.js components",
-  "main": "cli.js",
+  "main": "bin/nextcli.js",
+  "type": "module",
   "bin": {
-    "next-cli": "./cli.js"
+    "nextcli": "bin/nextcli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin/nextcli.js"
   },
   "keywords": [
     "nextjs",

@@ -1,7 +1,6 @@
-// cli.js
 import { program } from "commander"
-import generateComponent from "./generation/componentGenerator.js"
-import { helpTexts } from "./helpers/messageUtils.js"
+import generateComponent from "../generation/componentGenerator.js"
+import { helpTexts } from "../helpers/messageUtils.js"
 
 program
   .name("nextcli")

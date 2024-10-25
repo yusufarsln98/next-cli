@@ -14,7 +14,7 @@ A CLI tool for generating Next.js components quickly and efficiently.
 To install the CLI tool globally, run:
 
 ```sh
-npm install -g next-cli-tool
+npm install -g nextcli
 ```
 ````
 
@@ -25,7 +25,7 @@ npm install -g next-cli-tool
 To generate a new component, use the `generate` command (or its alias `g`):
 
 ```sh
-next-cli generate <type> <name> [options]
+nextcli generate <type> <name> [options]
 ```
 
 #### Example
@@ -33,7 +33,7 @@ next-cli generate <type> <name> [options]
 Generate a `button` component with TypeScript and CSS module support:
 
 ```sh
-next-cli generate component button --typescript --css
+nextcli generate component button --typescript --css
 ```
 
 ### Options
@@ -55,7 +55,7 @@ next-cli generate component button --typescript --css
 Generate a new component.
 
 ```sh
-next-cli generate <type> <name> [options]
+nextcli generate <type> <name> [options]
 ```
 
 #### Arguments
@@ -73,19 +73,19 @@ next-cli generate <type> <name> [options]
 Generate a `header` component:
 
 ```sh
-next-cli generate component header
+nextcli generate component header
 ```
 
 Generate a `home` page with TypeScript support:
 
 ```sh
-next-cli generate page home --typescript
+nextcli generate page home --typescript
 ```
 
 Generate a `main` layout with CSS module support:
 
 ```sh
-next-cli generate layout main --css
+nextcli generate layout main --css
 ```
 
 ## License
