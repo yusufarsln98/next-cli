@@ -1,0 +1,22 @@
+{
+  "name": "next-cli-tool",
+  "version": "1.0.0",
+  "description": "A CLI tool for generating Next.js components",
+  "main": "cli.js",
+  "bin": {
+    "next-cli": "./cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nextjs",
+    "cli",
+    "generator"
+  ],
+  "author": "Yusuf Arslan",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^8.0.0"
+  }
+}
