@@ -1,4 +1,3 @@
-````markdown
 # Next CLI Tool Installation Guide
 
 This guide will help you clone the Next CLI Tool from GitHub and use it to generate Next.js components quickly and efficiently.
@@ -18,7 +17,6 @@ Before using the Next CLI Tool, ensure that you have the following installed:
    ```sh
    git clone https://github.com/yusufarsln98/nextcli.git
    ```
-````
 
 2. **Change into the Project Directory**  
    Navigate to the cloned project directory:
