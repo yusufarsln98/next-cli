@@ -1,106 +1,169 @@
 ````markdown
-# Next CLI Tool
+# Next CLI Tool Installation Guide
 
-A CLI tool for generating Next.js components quickly and efficiently.
+This guide will help you clone the Next CLI Tool from GitHub and use it to generate Next.js components quickly and efficiently.
 
-## Features
+## Prerequisites
 
-- Generate various types of Next.js components: pages, layouts, templates, and generic components.
-- Optional TypeScript and CSS module support.
-- Easy-to-use command line interface.
+Before using the Next CLI Tool, ensure that you have the following installed:
+
+- [Node.js](https://nodejs.org/en/download/) (version 12 or higher)
+- npm (Node Package Manager, included with Node.js)
 
 ## Installation
 
-To install the CLI tool globally, run:
+1. **Clone the Repository**  
+   First, open your terminal and run the following command to clone the Next CLI Tool repository:
 
-```sh
-npm install -g nextcli
-```
+   ```sh
+   git clone https://github.com/yusufarsln98/nextcli.git
+   ```
 ````
+
+2. **Change into the Project Directory**  
+   Navigate to the cloned project directory:
+
+   ```sh
+   cd nextcli
+   ```
+
+3. **Install Required Packages**  
+   Before using the project, install the necessary npm packages:
+
+   ```sh
+   npm install
+   ```
+
+4. **Create an NPM Link**  
+   To make the CLI tool available globally, run the following command:
+
+   ```sh
+   npm link
+   ```
 
 ## Usage
 
-### Generate a Component
+### Generating Components
 
-To generate a new component, use the `generate` command (or its alias `g`):
-
-```sh
-nextcli generate <type> <name> [options]
-```
-
-#### Example
-
-Generate a `button` component with TypeScript and CSS module support:
+You can create a new component using the `generate` command (or its alias `g`). The syntax is as follows:
 
 ```sh
-nextcli generate component button --typescript --css
+nextcli g <type> <name> [options]
 ```
-
-### Options
-
-- `--typescript`: Include TypeScript support.
-- `--css`: Include CSS module support.
 
 ### Component Types
 
-- `component`: A generic component.
-- `page`: A Next.js page component.
-- `layout`: A layout component.
-- `template`: A template component.
+You can generate different types of Next.js components:
 
-## Commands
+- **component**: A generic component.
+- **page**: A Next.js page component.
+- **layout**: A layout component.
+- **template**: A template component.
 
-### `generate` (alias: `g`)
+### Example Commands
 
-Generate a new component.
+Here are a few examples of how to generate components:
 
-```sh
-nextcli generate <type> <name> [options]
-```
+1. **Generate a Generic Component**  
+   To create a `button` component with TypeScript and CSS module support:
 
-#### Arguments
+   ```sh
+   nextcli generate component button --typescript --css
+   ```
 
-- `<type>`: The type of component to generate (e.g., `component`, `page`, `layout`, `template`).
-- `<name>`: The name of the component.
+2. **Generate a Page Component**  
+   To create a `home` page with TypeScript support:
 
-#### Options
+   ```sh
+   nextcli generate page home --typescript
+   ```
 
-- `--typescript`: Include TypeScript support.
-- `--css`: Include CSS module support.
+3. **Generate a Layout Component**  
+   To create a `main` layout with CSS module support:
 
-## Examples
+   ```sh
+   nextcli generate layout main --css
+   ```
 
-Generate a `header` component:
+## Options
 
-```sh
-nextcli generate component header
-```
+You can use the following options when generating components:
 
-Generate a `home` page with TypeScript support:
-
-```sh
-nextcli generate page home --typescript
-```
-
-Generate a `main` layout with CSS module support:
-
-```sh
-nextcli generate layout main --css
-```
+- `--typescript`: Include TypeScript support in the generated component.
+- `--css`: Include CSS module support in the generated component.
+- `--client`: Include client-side code in the generated component.
+- `--server`: Include server-side code in the generated component.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. For more details, please refer to the [LICENSE](LICENSE) file.
 
 ## Contributing
 
-Contributions are welcome! Please open an issue or submit a pull request.
+Contributions are welcome! If you have suggestions or improvements, please open an issue or submit a pull request on [GitHub](https://github.com/yusufarsln98/nextcli).
 
 ## Author
 
 Yusuf Arslan - [GitHub](https://github.com/yusufarsln98)
 
-```
+---
 
-This `README.md` file provides an overview of your CLI tool, installation instructions, usage examples, and other relevant information. Make sure to replace placeholders like "Your Name" and "Your GitHub Profile" with your actual details.
-```
+## Using NPM Link on Windows
+
+1. **Open Windows Terminal**  
+   Search for "cmd" or "PowerShell" in the Start menu to open a terminal.
+
+2. **Navigate to the Project Directory**  
+   Use the following command to navigate to the cloned project:
+
+   ```sh
+   cd C:\path\to\nextcli
+   ```
+
+3. **Create an NPM Link**  
+   While in the project directory, run:
+
+   ```sh
+   npm link
+   ```
+
+4. **Using the CLI Tool**  
+   You can now use the `nextcli` command from any directory:
+
+   ```sh
+   nextcli generate component myComponent
+   ```
+
+---
+
+## Using NPM Link on Ubuntu
+
+1. **Open the Terminal**  
+   Open the terminal from the applications menu or use the shortcut `Ctrl + Alt + T`.
+
+2. **Navigate to the Project Directory**  
+   Use the following command to navigate to the cloned project:
+
+   ```sh
+   cd /path/to/nextcli
+   ```
+
+3. **Create an NPM Link**  
+   While in the project directory, run:
+
+   ```sh
+   npm link
+   ```
+
+4. **Using the CLI Tool**  
+   You can now use the `nextcli` command from any directory:
+
+   ```sh
+   nextcli --help
+   ```
+
+   ```sh
+   nextcli generate component myComponent
+   ```
+
+---
